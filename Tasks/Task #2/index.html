@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: "Cairo";
+        }
+
+        fieldset legend {
+            color: white;
+            background-color: black;
+        }
+
+        fieldset {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <fieldset>
+                <legend>Your name</legend>
+                <label for="firstName" name="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+
+                <br><br>
+
+                <label for="lastName" name="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            </fieldset>
+
+            <br>
+            <br>
+            <label for="phoneNumber" name="phoneNumber">Your Phone</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="eg. +20 1015888272" required>
+
+            <br>
+            <br>
+
+            <label for="uMail" name="uMail">Use Mail</label>
+            <input type="email" name="uMail" id="uMail" placeholder="ex. mahros@hotmail.com" required>
+
+            <br>
+            <br>
+
+            <label for="uPassword" name="uPassword">Password</label>
+            <input type="password" name="uPassword" id="uPassword" placeholder="Password" required>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="Gender" value="Male" id="male" required>
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="Gender" value="Female" id="female" required>
+                <label for="female">Female</label>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Status</legend>
+
+                <input type="checkbox" name="Degree" id="student" value="student" required>
+                <label for="student">Student</label>
+                <br>
+                <input type="checkbox" name="Degree" id="graduate" value="graduate" required>
+                <label for="graduate">Graduate</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Status - Updated</legend>
+                <input type="radio" name="Degree2" id="student2" value="student" required>
+                <label for="student2">Student</label>
+                <br>
+                <input type="radio" name="Degree2" id="graduate2" value="graduate" required>
+                <label for="graduate2">Graduate</label>
+            </fieldset>
+            <br>
+
+            <label for="University">University</label>
+            <select name="University" id="University">
+                <option value="cairo">Cairo, University</option>
+                <option value="Kafrelsheikh">Kafrelsheikh, University</option>
+                <option value="Galala">Galala, University</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="Country">Country</label>
+            <select name="Country" id="Country">
+                <optgroup label="Africa">
+                    <option value="Northern Africa">Northern Africa</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Western Africa">Western Africa</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Ivory Coast">Ivory Coast</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Eastern Africa">Eastern Africa</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Sudan">South Sudan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="Central Africa">Central Africa</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Congo (Brazzaville)">Congo (Brazzaville)</option>
+                    <option value="Congo (Kinshasa)">Congo (Kinshasa)</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="São Tomé and Príncipe">São Tomé and Príncipe</option>
+                    <option value="Southern Africa">Southern Africa</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Eswatini (Swaziland)">Eswatini (Swaziland)</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="South Africa">South Africa</option>
+
+                </optgroup>
+
+                <optgroup label="Asia">
+                    <option value="East Asia">East Asia</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="North Korea">North Korea</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Southeast Asia">Southeast Asia</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Timor-Leste">Timor-Leste</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="South Asia">South Asia</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="India">India</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Central Asia">Central Asia</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Western Asia (Middle East)">Western Asia (Middle East)</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Palestine">Palestine</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Yemen">Yemen</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <br>
+        <label for="cletter">Cover Letter</label>
+        <textarea name="CLetter" placeholder="Enter Your Cover Letter..." rows="5" cols="40" style="resize: none;"
+            id="cletter"></textarea>
+        <br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="clear">
+    </form>
+
+    <br>
+    <p style="font-size: 18px; text-align:center">
+        created with &heartsuit; by <a href="https://linkedin.com/in/ma7ros" target="_blank">@mahros</a>
+    </p>
+</body>
+
+</html>
