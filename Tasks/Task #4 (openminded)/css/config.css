@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Offside:700|Offside:400');
+
+:root {
+    --text: #270202;
+    --background: #fee7e8;
+    --primary: #8d0707;
+    --secondary: #f7d859;
+    --accent: #c2bf0a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    color: var(--text);
+    font-family: 'Offside';
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Offside';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 4.210rem;
+    /* 67.36px */
+}
+
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
+
+h4 {
+    font-size: 1.777rem;
+    /* 28.48px */
+}
+
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
+
+/** Colors themes from this website
+    https://www.realtimecolors.com/dashboard?colors=270202-fee7e8-8d0707-f7d859-c2bf0a&fonts=Fredoka-Fredoka
+ */
+
+/* :root[data-theme="light"] {
+    --text-50: #fee7e7;
+    --text-100: #fccfcf;
+    --text-200: #fa9e9e;
+    --text-300: #f76e6e;
+    --text-400: #f53d3d;
+    --text-500: #f20d0d;
+    --text-600: #c20a0a;
+    --text-700: #910808;
+    --text-800: #610505;
+    --text-900: #300303;
+    --text-950: #180101;
+
+    --background-50: #fee7e8;
+    --background-100: #fdced0;
+    --background-200: #fb9da2;
+    --background-300: #f96c73;
+    --background-400: #f73b45;
+    --background-500: #f50a16;
+    --background-600: #c40812;
+    --background-700: #93060d;
+    --background-800: #620409;
+    --background-900: #310204;
+    --background-950: #180102;
+
+    --primary-50: #fee7e7;
+    --primary-100: #fdcece;
+    --primary-200: #fa9e9e;
+    --primary-300: #f86d6d;
+    --primary-400: #f63c3c;
+    --primary-500: #f40b0b;
+    --primary-600: #c30909;
+    --primary-700: #920707;
+    --primary-800: #610505;
+    --primary-900: #310202;
+    --primary-950: #180101;
+
+    --secondary-50: #fef9e7;
+    --secondary-100: #fdf3ce;
+    --secondary-200: #fae89e;
+    --secondary-300: #f8dc6d;
+    --secondary-400: #f6d13c;
+    --secondary-500: #f4c50b;
+    --secondary-600: #c39e09;
+    --secondary-700: #927607;
+    --secondary-800: #614f05;
+    --secondary-900: #312702;
+    --secondary-950: #181401;
+
+    --accent-50: #fefde7;
+    --accent-100: #fcfccf;
+    --accent-200: #faf89e;
+    --accent-300: #f7f56e;
+    --accent-400: #f5f23d;
+    --accent-500: #f2ee0d;
+    --accent-600: #c2bf0a;
+    --accent-700: #918f08;
+    --accent-800: #615f05;
+    --accent-900: #303003;
+    --accent-950: #181801;
+
+}
+
+:root[data-theme="dark"] {
+    --text-50: #180101;
+    --text-100: #300303;
+    --text-200: #610505;
+    --text-300: #910808;
+    --text-400: #c20a0a;
+    --text-500: #f20d0d;
+    --text-600: #f53d3d;
+    --text-700: #f76e6e;
+    --text-800: #fa9e9e;
+    --text-900: #fccfcf;
+    --text-950: #fee7e7;
+
+    --background-50: #180102;
+    --background-100: #310204;
+    --background-200: #620409;
+    --background-300: #93060d;
+    --background-400: #c40812;
+    --background-500: #f50a16;
+    --background-600: #f73b45;
+    --background-700: #f96c73;
+    --background-800: #fb9da2;
+    --background-900: #fdced0;
+    --background-950: #fee7e8;
+
+    --primary-50: #180101;
+    --primary-100: #310202;
+    --primary-200: #610505;
+    --primary-300: #920707;
+    --primary-400: #c30909;
+    --primary-500: #f40b0b;
+    --primary-600: #f63c3c;
+    --primary-700: #f86d6d;
+    --primary-800: #fa9e9e;
+    --primary-900: #fdcece;
+    --primary-950: #fee7e7;
+
+    --secondary-50: #181401;
+    --secondary-100: #312702;
+    --secondary-200: #614f05;
+    --secondary-300: #927607;
+    --secondary-400: #c39e09;
+    --secondary-500: #f4c50b;
+    --secondary-600: #f6d13c;
+    --secondary-700: #f8dc6d;
+    --secondary-800: #fae89e;
+    --secondary-900: #fdf3ce;
+    --secondary-950: #fef9e7;
+
+    --accent-50: #181801;
+    --accent-100: #303003;
+    --accent-200: #615f05;
+    --accent-300: #918f08;
+    --accent-400: #c2bf0a;
+    --accent-500: #f2ee0d;
+    --accent-600: #f5f23d;
+    --accent-700: #f7f56e;
+    --accent-800: #faf89e;
+    --accent-900: #fcfccf;
+    --accent-950: #fefde7;
+} */

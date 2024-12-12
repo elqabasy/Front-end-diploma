@@ -1,0 +1,56 @@
+/** components */
+/* navbar */
+body {
+    text-align: center;
+    align-items: center center;
+
+}
+
+.portfolio {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+
+header {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    /* background-color: rgb(173, 117, 12); */
+}
+
+/** Component.Logo */
+
+.logo {
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    background-color: wheat;
+
+}
+
+.logo>.icon {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../assets/Mahros.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+
+.logo>.icon>img {
+    /* height: 100%; */
+    /* border-radiu s: 15px; */
+}
